@@ -8,14 +8,16 @@
         "name": "[toLower('windowsVM1storage')]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2023-01-01",
-        "location": "[resourceGroup().location]",
+        "location": "
+               
+        [resourceGroup().location]",
         "tags": {
             "displayName": "windowsVM1 Storage Account"
         },
         "sku": {
             "name": "Standard_LRS"
         },
-        "kind": "Storage"
+        "kind": "StorageV2"
     },
     {
         "name": "windowsVM1-PublicIP",
